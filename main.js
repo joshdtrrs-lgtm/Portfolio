@@ -77,6 +77,19 @@ function answerQuestion(question) {
     }
 
 
+    /* ACHIEVEMENT */
+
+    else if (question == "achievement") {
+
+        answer.innerHTML =
+            "<strong>JOSH'S ACHIEVEMENT</strong>" +
+            "<br><br>" +
+            "Josh created an Admin Payroll System " +
+            "using PHP, MySQL, HTML, and CSS.";
+
+    }
+
+
     /* PROJECT */
 
     else if (question == "project") {
