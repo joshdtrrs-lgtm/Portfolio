@@ -2140,3 +2140,348 @@ footer > p {
             repeat(2, 1fr);
     }
 }
+
+/* =========================================================
+   FINAL FIX FOR GITHUB PAGES
+   LOGO + HERO + BADGES
+========================================================= */
+
+
+/* -------------------------
+   HEADER LOGO FIX
+------------------------- */
+
+header .logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    position: relative !important;
+    z-index: 1001 !important;
+
+    text-decoration: none !important;
+}
+
+header .logo-image {
+    display: block !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    min-width: 42px !important;
+    min-height: 42px !important;
+
+    max-width: 42px !important;
+    max-height: 42px !important;
+
+    object-fit: contain !important;
+
+    position: relative !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+
+    clip-path: none !important;
+}
+
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+header {
+    position: sticky !important;
+
+    top: 0 !important;
+
+    width: 100% !important;
+
+    height: 70px !important;
+
+    z-index: 9999 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+}
+
+
+/* -------------------------
+   HERO IMAGE FIX
+------------------------- */
+
+.home-image {
+    position: relative !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 380px !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    overflow: visible !important;
+
+    z-index: 2 !important;
+}
+
+.home-image img {
+    display: block !important;
+
+    max-width: 100% !important;
+
+    max-height: 100% !important;
+}
+
+
+/* -------------------------
+   PROFILE IMAGE SHAPE
+------------------------- */
+
+.image-shape {
+    width: 330px !important;
+    height: 400px !important;
+
+    max-width: 330px !important;
+    max-height: 400px !important;
+
+    overflow: hidden !important;
+
+    position: relative !important;
+
+    flex-shrink: 0 !important;
+}
+
+.image-shape img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: 100% !important;
+    max-height: 100% !important;
+
+    object-fit: cover !important;
+
+    display: block !important;
+
+    position: relative !important;
+
+    transform: none !important;
+}
+
+
+/* -------------------------
+   PREVENT JD LOGO FROM
+   BECOMING A GIANT IMAGE
+------------------------- */
+
+.home .logo-image,
+.home-content .logo-image,
+.home-image .logo-image {
+    width: 42px !important;
+    height: 42px !important;
+
+    max-width: 42px !important;
+    max-height: 42px !important;
+
+    object-fit: contain !important;
+
+    transform: none !important;
+}
+
+
+/* -------------------------
+   HERO CONTENT
+------------------------- */
+
+.home-content {
+    position: relative !important;
+
+    z-index: 5 !important;
+
+    max-width: 700px !important;
+}
+
+.home-content h1 {
+    position: relative !important;
+
+    z-index: 6 !important;
+}
+
+
+/* -------------------------
+   CAREER BADGES
+------------------------- */
+
+.career-badges {
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    margin: 18px 0 25px !important;
+}
+
+.career-badges span {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    padding: 7px 12px !important;
+
+    margin: 0 !important;
+
+    border: 1px solid rgba(0, 234, 255, 0.35) !important;
+
+    background: rgba(0, 234, 255, 0.06) !important;
+
+    color: #9eeaf2 !important;
+
+    border-radius: 999px !important;
+
+    font-size: 10px !important;
+
+    line-height: 1 !important;
+
+    letter-spacing: 1px !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* -------------------------
+   HERO DESCRIPTION
+------------------------- */
+
+.home-description {
+    position: relative !important;
+
+    z-index: 5 !important;
+
+    max-width: 650px !important;
+
+    line-height: 1.8 !important;
+}
+
+
+/* -------------------------
+   HERO BUTTONS
+------------------------- */
+
+.career-cta {
+    position: relative !important;
+
+    z-index: 10 !important;
+
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 12px !important;
+}
+
+.career-cta a {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+}
+
+
+/* -------------------------
+   LIGHTNING
+------------------------- */
+
+.lightning-line {
+    z-index: 1 !important;
+
+    pointer-events: none !important;
+}
+
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 850px) {
+
+    .home {
+        flex-direction: column !important;
+
+        text-align: center !important;
+    }
+
+    .home-content {
+        width: 100% !important;
+
+        max-width: 700px !important;
+    }
+
+    .career-badges {
+        justify-content: center !important;
+    }
+
+    .career-cta {
+        justify-content: center !important;
+    }
+
+    .home-image {
+        width: 100% !important;
+
+        max-width: 330px !important;
+    }
+
+    .image-shape {
+        width: 280px !important;
+        height: 340px !important;
+
+        max-width: 280px !important;
+        max-height: 340px !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .home {
+        padding-left: 6% !important;
+        padding-right: 6% !important;
+    }
+
+    .home-image {
+        max-width: 300px !important;
+    }
+
+    .image-shape {
+        width: 250px !important;
+        height: 310px !important;
+
+        max-width: 250px !important;
+        max-height: 310px !important;
+    }
+
+    .career-badges {
+        gap: 7px !important;
+    }
+
+    .career-badges span {
+        font-size: 8px !important;
+
+        padding: 6px 9px !important;
+    }
+}
